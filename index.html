@@ -4,35 +4,126 @@
     <meta charset="utf-8">
     <title>Richard Verbraak</title>
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
 
+    <!-- Background ADD GREY RGBA-->
+    <div class="bg">
 
-      <header>
-        <h1>Richard Verbraak</h1>
-      </header>
+      <!-- Navbar -->
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Hallo</a>
 
-      <div class="container-info-box">
-        <h2>Front-End Web Developer</h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+
+      <!-- Intro -->
+      <div class="jumbotron jumbotron-fluid pt-5">
+        <div class="container">
+          <h1 class="display-1 text-center">Richard Verbraak</h1>
+          <p class="lead text-center">On path to be an accomplished Front-End Web Developer</p>
+        </div>
       </div>
 
-      <nav>
-        <ul>
-          <li><a class="about" href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
 
-      <footer>
-        <ul class="social-media">
-          <li><a id="linked-in" href="https://www.linkedin.com/in/richard-verbraak-895ba4173/" target="_blank">LinkedIn</a></li>
-          <li><a id="git-hub" href="https://github.com/RichardVerbraak" target="_blank">GitHub</a></li>
-        </ul>
-      </footer>
 
-      <script src="jquery.js" charset="utf-8"></script>
-      <script src="scripts.js" charset="utf-8"></script>
+      <!-- Lists with modal -->
+      <div class="text-center">
+        <button type="button" class="custom btn btn-outline-light btn-lg mr-5" data-toggle="modal" data-target="#portfolio">Portfolio</button>
+        <button type="button" class="custom btn btn-outline-light btn-lg mr-5" data-toggle="modal" data-target="#skills">Skills</button>
+        <button type="button" class="custom btn btn-outline-light btn-lg" data-toggle="modal" data-target="#about">About</button>
+      </div>
+
+
+      <!-- Footer -->
+
+
+    <!-- End Background Div -->
+    </div>
+
+    <!-- Modals outside of the bg div! -->
+    <div id="portfolio" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
+
 </html>
