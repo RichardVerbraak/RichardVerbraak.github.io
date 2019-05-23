@@ -2,32 +2,41 @@
 
 body, html {
   height: 100vh;
+  width: 100%;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  overflow: hidden;
 }
 
-/* Class Styles */
+/* CLASS STYLES */
 
+/* Background */
 .bg {
   background-image: url("images/man_mountains.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: invert(6%);
+  filter: invert(12%);
 }
 
+/* Intro Section */
 .jumbotron {
   background-color: transparent !important;
-  color: white;
-  padding-top: 12rem !important;
+  padding-top: 10% !important;
+  margin-bottom: 0 !important;
+}
+
+.jumbotron h1 {
+  letter-spacing: 6px;
 }
 
 .lead {
-  font-size: 1.5rem !important;
+  font-size: 1.3rem !important;
 }
 
 .list-group-item {
   background-color: transparent !important;
-  color: white;
   border: 1px solid rgba(255, 255, 255, 0.6) !important;
 }
 
@@ -35,3 +44,65 @@ body, html {
   font-size: 2rem !important;
   width: 160px !important;
 }
+
+/* Modals */
+.modal-content {
+  background-color: #1d271c;
+
+}
+
+.close,
+.btn-secondary {
+  color: white;
+  background-color: transparent;
+}
+
+.close:hover {
+  color: white;
+}
+
+/* Icons */
+.mail-icon::before {
+  content: url("images/email.svg");
+}
+
+.phone-icon::before {
+  content: url("images/phone.svg");
+}
+
+.github-icon::before {
+  content: url("images/github-icon.svg");
+}
+
+.linkedin-icon::before {
+  content: url("images/linkedin-logo.svg")
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+  background-color: #1d271c;
+  opacity: 0.8;
+  width: 100%;
+}
+
+footer span {
+  display: flex;
+  align-items: center;
+}
+
+footer span::before {
+  padding-right: 10px;
+}
+
+footer span a  {
+  color: inherit;
+}
+
+footer span a:hover {
+  color: inherit;
+}
+
+/* Media Queries */
